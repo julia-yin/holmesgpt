@@ -10,4 +10,12 @@ ALLOWED_EVAL_TAGS = Literal[
     "context_window",  # An eval that tests HolmesGPT's ability to find information despite the data not fitting the LLM's context window
     "synthetic",  # An eval that cannot be run live because its mocked data has been manually generated
     "datetime",  # An eval that tests HolmesGPT's ability to rely on or correctly use date and/or time information
+    "network",  # An eval related to networking issues
+    "runbooks",  # An eval that relies on runbooks
+    "kafka",  # An eval that uses kafka
+    "missing-tool",  # An eval that does not have the required tool(s) to investigate the issue
+    "misleading-history",  # An eval with misleading historical data
+    "k8s-misconfig",  # An eval related to Kubernetes misconfigurations
+    "chain-of-causation",  # An eval that tests chain-of-causation analysis
+    "slackbot",  # An eval related to Slack bot functionality
 ]
